@@ -1,1 +1,30 @@
+body
+{
+  color:black;  
+}
+input
+{
+    color:green;
+}
+.background
+{
+ position:absolute;
+top:0;
+left:0;
+z-index: -1;
+
+
+
+}
+img{
+  width: 20vh;
+  height: 30vh;
+
+}
+
+.home img{
+  width: 100vw;
+height: 35vw;
+object-fit: cover;
+}
 
