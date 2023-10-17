@@ -1,3 +1,2 @@
 # welcom
-[[images/fenty2.jpg]]
-
+!(images/fenty2.jpg)
