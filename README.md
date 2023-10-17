@@ -1,2 +1,2 @@
 # welcom
-!(images/fenty2.jpg)
+![screen shot](images/fenty2.jpg)
