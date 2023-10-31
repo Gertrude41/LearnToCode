@@ -22,7 +22,7 @@ let animal = {
 
 animal.name = "Diva";
 animal.kind = "person"
-animal.speak = () => console.log("Woof")
+animal.speak = () => console.log("big")
 
 animal.name = "Finneley";
 animal.kind = "Cat"
