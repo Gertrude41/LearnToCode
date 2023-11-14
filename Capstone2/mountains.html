@@ -1,0 +1,34 @@
+!DOCTYPE <html></html>
+html leng="en">
+head>
+<meta charset="UTF-8">
+meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>Mountains</title>
+
+<!--FIRST LOAD ALL THE MOUNTAINS LIKE THIS-->
+<script src="./scrips/mountainsData.js"><</script>
+
+/head>
+<body>
+    <h1>Mountains</h1>
+    <!--THIRD MAKE A PLACE FOR THE MOUNTAINS LIST AND A DEFAULT OPTION-->
+    <select id="list"><option value="">select a Mountain</option></select>
+    <!--FIFTH ADD TARGET FOR RESULTS-->
+    <p id="results"></p>
+    /body>
+    script>
+    //SECOND MAKE SURE DATA IS LOADAD LIKE THIS
+    document.body.innerHTML += mountainsArray.length;//We should se 48 in the show preview
+
+    //FOURTH LOOP THROUGH ALL DATA AND ADD A NEW OPTION FOR EACH TO THE SELECT 
+    mountainsArray.foreach(mountain=>{//USE FOR EACH METHOD OF THE DATA TO GET }) AT A TIME IN ARROW FUNCTION
+    const option= document.createElement("option");//CREATE BLANK OPTION ELEMENT
+    option.innerHTML=mountain.name;//SET DISPLAY OPTION CONTENT TO NAME
+    list.appendCHILD(option);// PLACE OPTION IN THE SELECT LIST
+});//END FOR EACH
+
+//SIXTH - LISTEN FOR LIST CHANGE SELECTION
+list.addEventlistener("change", event=>){
+    
+}
+</body>
