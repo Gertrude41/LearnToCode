@@ -3,10 +3,65 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"content="width=device-width,initial-scale=1.0">
-        <title>National parks-outdoor Explorer</title>
-        <link rel="stylesheet"href="styles.css">
+        <title>Parks</title>
+        <script src="./scripts/locationData.js"></script>
+        <script src="./scripts/parktypedata.js"></script>
+        <script src="./scripts/nationalparkData.js"></script>
+        <style>
+            body{
+                vertical-align: top;
+            }
+            .card{
+                width: 29vw;
+                border: 1px solid black;
+                margin: 0.1em 0.1em 0 0;
+                display: inline-block;
+                vertical-align: top;
+                height: 20vh;
+            }
+        </style>
         </head>
+
         <body>
+            <h1>Parks</h1>
+            <select id="locationslist">
+                <option value="">select a Location:</option>
+            </select>
+            <select id="parkTypeList">
+                <option value="">select  Park Type:</option >
+                </select>
+                <div id="results">Results</div>
+        </body>
+        <script>
+ locationsArray.forEach(location=>locationsList.innerHTML+=`<Option>${location}</option>`);
+ parkTypesArray.forEach(pt=>parkTypeList.innerHTML+=`<option>${pt}</option>`);
+ //document.body.innerHTML+=nationalParksArray.length;
+ //GLOBALS
+ let selectedLocation="";
+ let selectedParkType="";
+
+ locationList.addEventListener("change",e=>{
+    <selectedlocation= e.target.value;
+    showResults();
+ });
+ function showResults(){
+    results.innerHTML="";
+    nationalparksArray.filter(
+        p=>(selectedLocation=="||p.state==selectedLocation")&&
+        |(selectedParkType==""||p.locationName.includes(selectedParkType))
+    ).forEach(park=>{
+results.innerHTML+=`<div class="card"><p>${park.locationName}</p><p><b>${park.state}</b></p></div>`;
+});
+ }
+ showResults();
+ </script>
+
+ </html>
+    
+
+    )
+ })
+
             <header>
                 <h1>National parks</h1>
             </header>
@@ -26,5 +81,6 @@
       </footer>
     </body>
     </html>
+
 
 
