@@ -17,14 +17,18 @@
                 margin: 0.1em 0.1em 0 0;
                 display: inline-block;
                 vertical-align: top;
-                height: 20vh;
+                height: 30vh;
             }
         </style>
         </head>
 
         <body>
             <h1>Parks</h1>
-            <select id="locationslist">
+            <a href="parks.html">Parks</a>
+<a href="Mountains.html">Mountains</a>
+<br>
+<br>
+            <select id="locationsList">
                 <option value="">select a Location:</option>
             </select>
             <select id="parkTypeList">
@@ -40,17 +44,21 @@
  let selectedLocation="";
  let selectedParkType="";
 
- locationList.addEventListener("change",e=>{
-    <selectedlocation= e.target.value;
+ locationsList.addEventListener("change",e=>{
+    selectedLocation= e.target.value;
     showResults();
  });
+ parkTypeList.addEventListener("change",e=>{
+selectedParkType=e.target.value;
+showResults();
+ })
  function showResults(){
     results.innerHTML="";
-    nationalparksArray.filter(
-        p=>(selectedLocation=="||p.state==selectedLocation")&&
-        |(selectedParkType==""||p.locationName.includes(selectedParkType))
+nationalParksArray.filter(
+        p=>(selectedLocation==""||p.State==selectedLocation)&&
+        (selectedParkType==""||p.LocationName.includes(selectedParkType))
     ).forEach(park=>{
-results.innerHTML+=`<div class="card"><p>${park.locationName}</p><p><b>${park.state}</b></p></div>`;
+results.innerHTML+=`<div class="card"><p>${park.LocationName}</p><p><b>${park.State}</b></p></div>`;
 });
  }
  showResults();
@@ -58,26 +66,11 @@ results.innerHTML+=`<div class="card"><p>${park.locationName}</p><p><b>${park.st
 
  </html>
     
-
-    )
- })
-
-            <header>
-                <h1>National parks</h1>
-            </header>
-            <nav>
-          <ul>
-       <li><a href="index.html">home</a></li>
-         <li><a href="national_parks.html">national parks</a></li>
-         <li><a href="mountain_info.html">mountain Info</a></li>
-         </ul>
-         </nav><nav>
          <main>
-         <h2>search National parks</h2>
-        <!--your search form and park listing go here-->
+        
         </main>
          <footer>
-      <p>contact us at <a href="mailto:info@outdoorexplorer.com"></a>/a></p>
+      
       </footer>
     </body>
     </html>
