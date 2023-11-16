@@ -4,7 +4,7 @@ html lang="en">
 <meta charset="UTF-8"
 meta name="viewport"content="width=device-width,initial-scale=1.0">
 <title>Mountains</title>
-
+<link rel="stylesheet" href="./main.css">
 <!--FIRST LOAD ALL THE MOUNTAINS LIKE THIS-->
 <script src="./scripts/mountainData.js"></script>
 
@@ -15,6 +15,9 @@ meta name="viewport"content="width=device-width,initial-scale=1.0">
     <select id="list"><option value="">select a Mountain</option></select>
     <!--FIFTH ADD TARGET FOR RESULTS-->
     <p id="results"></p>
+    <footer>
+        <p>contact us at <a href="mailto:info@doorexplorer.com">info@outdoorexplorer.com</a></p>
+        </footer>  
 </body>
    <script>
     //SECOND MAKE SURE DATA IS LOADAD LIKE THIS
@@ -34,7 +37,8 @@ let mountain=mountainsArray.find(m=>m.name==event.target.value);//FIND DATA
 
 results.innerHTML=`<h1>${mountain.name}</h1>`;//SHOW RESULTS
 results.innerHTML+=mountain.desc;
-results.innerHTML+=`<h3>${mountain.elevation}</h3>`;
+results.innerHTML+=`<h3>difficulty ${mountain.effort}</h3>`;
+results.innerHTML+=`<h3>Elevetion ${mountain.elevation}</h3>`;
 results.innerHTML+=`<img src="./images/${mountain.img}">`;
 });//END LISTENER
 </script>
