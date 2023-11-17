@@ -8,6 +8,7 @@ meta name="viewport"content="width=device-width,initial-scale=1.0">
 <!--FIRST LOAD ALL THE MOUNTAINS LIKE THIS-->
 <script src="./scripts/mountainData.js"></script>
 
+
 </head>
 <body>
     <h1>Mountains</h1>
@@ -37,6 +38,8 @@ let mountain=mountainsArray.find(m=>m.name==event.target.value);//FIND DATA
 
 results.innerHTML=`<h1>${mountain.name}</h1>`;//SHOW RESULTS
 results.innerHTML+=mountain.desc;
+results.innerHTML+=`<h3>latitude ${mountain.coords.lat}</h3>`;
+results.innerHTML+=`<h3>longetude ${mountain.coords.lng}</h3>`;
 results.innerHTML+=`<h3>difficulty ${mountain.effort}</h3>`;
 results.innerHTML+=`<h3>Elevetion ${mountain.elevation}</h3>`;
 results.innerHTML+=`<img src="./images/${mountain.img}">`;
