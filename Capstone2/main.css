@@ -1,47 +1,40 @@
 body{
-    background-color: beige;
-    font-family: "Times New Roman",Times serif;
+    background-color: darkseagreen;
+    color: saddlebrown;
+    color: rgb(77, 95, 107);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    vertical-align: top;
 }
-
-h1{
-color:rgb(43, 226, 92);
-font-size:40px;
-}
-
-.navone{
-    background-color: #ffffff;
-    border: 8px solid;
-    border-radius: 30px;
-    box-shadow: #a9a9a9 4px 4px 0 0;
-    color: #431533;
-    cursor: pointer;
+.card{
+    width: 29vw;
+    border: 1px solid black;
+    margin: 0.1em 0.1em 0 0;
     display: inline-block;
-    font-weight: 600;
-    font-size: 5px;
-    padding: 0 90px;
-    line-height: 70px;
-    margin-left: 50px;
-    margin-top: 10px;
-    text-decoration: none;
+    vertical-align: top;
+    min-height: 26vh;
+    font-size: 4vh
 }
-.button{
-    font-size: 50px;
+a{
     text-decoration: none;
-}
-
-.navtwo{
-    background-color: #FFFFFF;
-    border: 8px solid;
-    border-radius: 30px;
-    box-shadow: #A9a9a9;
-    color: #433715;
-    cursor: pointer;
     display: inline-block;
-    font-weight: 600;
-    
+    margin: 1em;
+    color: white;
+    background-color: saddlebrown;
+    padding: 1em;
+    border-radius: 1em;;
 }
+a:hover{
+    text-decoration: underline;
+    color: gold;
 }
+select{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 3em;
 }
-}
+/* option{
+    padding: 1em;
+    margin: 1em;
+} */
 
-}
