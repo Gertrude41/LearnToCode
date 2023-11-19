@@ -1,7 +1,7 @@
 body{
     background-color: darkseagreen;
-    color: saddlebrown;
-    color: rgb(77, 95, 107);
+    color: rgb(139, 63, 19);
+    color: rgb(107, 77, 79);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     vertical-align: top;
@@ -14,13 +14,14 @@ body{
     vertical-align: top;
     min-height: 26vh;
     font-size: 4vh
+
 }
 a{
     text-decoration: none;
     display: inline-block;
     margin: 1em;
     color: white;
-    background-color: saddlebrown;
+    background-color: rgb(139, 19, 87);
     padding: 1em;
     border-radius: 1em;;
 }
